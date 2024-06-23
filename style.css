@@ -1,0 +1,168 @@
+body {
+    margin: 0px auto;
+    padding: 0px;
+    width: 500px;
+    color: #ff24d3;
+    font-family: "Bree Serif";
+    position: relative;
+    background-color: #8e24ff;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0px 24%;
+    font-size: 48px;
+}
+
+main {
+    width: 500px;
+    height: 550px;
+    border-radius: 50px;
+    background-color: #50f8c6;
+    position: relative;
+}
+
+.game-board {
+    margin: 0px auto;
+    background-color: #ff4c24;
+    height: 440px;
+    width: 440px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.shape {
+    width: 140px;
+    height: 140px;
+    background-color: #ecf23e;
+    float: left;
+    border: 1px solid #383030;
+    cursor: pointer;
+    color: #34d0f7;
+    font-size: 100px;
+    position: relative;
+}
+
+.hidden {
+    font-size: 0px;
+}
+
+
+#win {
+    position: absolute;
+    background-color: #ff9924;
+}
+
+.row {
+    width: 400px;
+    height: 10px;
+}
+
+.col {
+    width: 10px;
+    height: 400px;
+}
+
+.diagonal1 {
+    width: 410px;
+    height: 10px;
+    top: 210px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.fa-circle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.fa-times {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+}
+.diagonal2 {
+    width: 410px;
+    height: 10px;
+    top: 220px;
+    transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.restart {
+    width: 400px;
+    height: 50px;
+    margin: 15px 50px;
+    background-color: #8aff24;
+    border: 2px solid rgb(247, 80, 194);
+    color: rgb(51, 60, 233);
+    font-family: "Bree Serif";
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.restart:hover {
+    background-color: rgb(255, 255, 255);
+    color: #247cff;
+    border: 2px solid #247cff;
+}
+
+.mod {
+    width: 150px;
+    height: 50px;;
+    background-color: rgb(241, 50, 238);
+    display: inline-block;
+    margin: 20px 0px 0px 60px;
+    transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+
+.mod1 {
+    background: url(imageone.png) no-repeat;
+    background-size: 130px;
+}
+
+.mod2 {
+    background: url(imagetwo.png) no-repeat;
+    background-size: 150px;
+}
+
+.mod:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.show {
+    font-size: 100px;
+}
+
+#winner {
+    color: rgb(241, 108, 20);
+    font-size: 60px;
+    position: absolute;
+    width: 440px;
+    top: 0px;
+    left: 0px;
+    padding-top: 180px;
+    opacity: 0.7;
+    height: 440px;
+    background-color: rgb(241, 213, 76);
+    display: none;
+    text-align: center;
+}
